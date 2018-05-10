@@ -1,5 +1,7 @@
 pipeline {
-  agent 'rslangehennig2'
+  agent {
+     label 'rslangehennig2'
+  }
 
   stages {
      stage('build') {
