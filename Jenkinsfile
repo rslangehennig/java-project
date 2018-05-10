@@ -1,9 +1,11 @@
 pipeline {
-  agent rslangehennig2
+  agent 'rslangehennig2'
 
   stages {
      stage('build') {
-       sh 'ant -f build.xml -v'
+       steps {
+          sh 'ant -f build.xml -v'
+       }
      }
   }
 }
